@@ -56,7 +56,7 @@ exports.handler = CfnLambda({
   SchemaPath: [__dirname, 'schema.json'],
   LongRunning: {
     PingInSeconds: 60,
-    MaxPings: 30,
+    MaxPings: 35,
     LambdaApi: Lambda,
     Methods: {
       Create: CheckCreate,
